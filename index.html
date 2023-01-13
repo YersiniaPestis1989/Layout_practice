@@ -16,40 +16,41 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/service.css">
+    <link rel="stylesheet" href="./css/about.css">
 </head>
 <body>
 <header class="header">
     <div class="container header__wrapper">
-        <img class="img" src="./images/header/logo.svg" alt="Logo">
+        <img class="container--img" src="./images/header/logo.svg" alt="Logo">
 
         <nav>
             <ul class="list">
-                <li class="item">
-                    <a href="" class="link">Услуги</a>
+                <li class="list__item">
+                    <a href="" class="list__item--link">Услуги</a>
                 </li>
-                <li class="item">
-                    <a href="" class="link">Продукция</a>
+                <li class="list__item">
+                    <a href="" class="list__item--link">Продукция</a>
                 </li>
-                <li class="item">
-                    <a href="" class="link">О компании</a>
+                <li class="list__item">
+                    <a href="" class="list__item--link">О компании</a>
                 </li>
-                <li class="item">
-                    <a href="" class="link">Портфолио</a>
+                <li class="list__item">
+                    <a href="" class="list__item--link">Портфолио</a>
                 </li>
-                <li class="item">
-                    <a href="" class="link">Вопрос-ответ</a>
+                <li class="list__item">
+                    <a href="" class="list__item--link">Вопрос-ответ</a>
                 </li>
-                <li class="item">
-                    <a href="" class="link">Контакты</a>
+                <li class="list__item">
+                    <a href="" class="list__item--link">Контакты</a>
                 </li>
             </ul>
         </nav>
         <div class="btn">
-            <button class="btn-item btn-item-orange">
+            <button class="btn__item btn__item--orange">
                 <img src="./images/header/icon1.svg" alt="icon1">
                 Заявка на замер
             </button>
-            <button class="btn-item btn-item-blue">
+            <button class="btn__item btn-item-blue">
                 <img src="./images/header/icon2.svg" alt="icon2">
                 Заказать расчет
             </button>
@@ -67,8 +68,8 @@
         <div class="blocks">
             
             <div class="block">
-                <img class="block_background" src="./images/service/block_background1.svg" alt="background1">
-                <div class="tint"></div>
+                <img class="block__background" src="./images/service/block_background1.svg" alt="background1">
+                <div class="block__tint"></div>
                 <div class="block__header">
                     <img class="block__header__icon" src="./images/service/img_block1.svg" alt="icon1">
                     <h3 class="block__header__title">Установка<br>пластиковых окон</h3>
@@ -80,8 +81,8 @@
             </div>
 
             <div class="block">
-                <img class="block_background" src="./images/service/block_background2.jpg" alt="background2">
-                <div class="tint"></div>
+                <img class="block__background" src="./images/service/block_background2.jpg" alt="background2">
+                <div class="block__tint"></div>
                 <div class="block__header">
                     <img class="block__header__icon" src="./images/service/img_block2.svg" alt="icon2">
                     <h3 class="block__header__title">Остекление балконов<br>
@@ -94,8 +95,8 @@
             </div>
 
             <div class="block">
-                <img class="block_background" src="./images/service/block_background3.svg" alt="background3">
-                <div class="tint"></div>
+                <img class="block__background" src="./images/service/block_background3.svg" alt="background3">
+                <div class="block__tint"></div>
                 <div class="block__header">
                     <img class="block__header__icon" src="./images/service/img_block3.svg" alt="icon4">
                     <h3 class="block__header__title">Остекление<br>
@@ -108,8 +109,8 @@
             </div>
 
             <div class="block">
-                <img class="block_background" src="./images/service/block_background4.svg" alt="background4">
-                <div class="tint"></div>
+                <img class="block__background" src="./images/service/block_background4.svg" alt="background4">
+                <div class="block__tint"></div>
                 <div class="block__header">
                     <img class="block__header__icon" src="./images/service/img_block4.svg" alt="icon3">
                     <h3 class="block__header__title">Остекление<br>
@@ -125,6 +126,66 @@
             
         </div>
     </div>
-</section>        
+</section> 
+<section class="about">
+    <div class="container">
+    <h2 class="title">О компании</h2>
+    <ul class="list-about">
+        <li class="list-about__item list-about__item--mark">Описание</li>
+        <li class="list-about__item">Как мы работаем</li>
+        <li class="list-about__item">Отзывы</li>
+        <li class="list-about__item">Сертификаты</li>
+    </ul>
+    <div class="description">
+        <img class="description__logo" src="./images/about/logo.svg" alt="logo">
+        <img class="description__image" src="./images/about/image.svg" alt="image">
+        <p class="description__text">Мы помогаем клиентам подбирать решения, учитывая пожежелания к характеристикам окна и его стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали правильный выбор.</p>
+    </div>
+    <div class="utp">
+        <div class="utp__item">
+            <img class="utp__item__icon" src="./images/about/icon1.svg" alt="icon1" class="utp_icon">
+            <p class="utp__item__title">профессионализм</p>
+            <p class="utp__item__text">Бригада профессиональных мастеров по монтажу и обслуживанию</p>
+        </div>
+
+        <div class="utp__item">
+            <img class="utp__item__icon" src="./images/about/icon2.svg" alt="icon2" class="utp_icon">
+            <p class="utp__item__title">Ценообразование </p>
+            <p class="utp__item__text">Лучшие цены на рынке пластиковых окон</p>
+        </div>
+
+        <div class="utp__item">
+            <img class="utp__item__icon" src="./images/about/icon3.svg" alt="icon3" class="utp_icon">
+            <p class="utp__item__title">Мобильность</p>
+            <p class="utp__item__text">Заключение договора на дому</p>
+        </div>
+
+        <div class="utp__item">
+            <img class="utp__item__icon" src="./images/about/icon4.svg" alt="icon4" class="utp_icon">
+            <p class="utp__item__title">Лояльность</p>
+            <p class="utp__item__text">99% клиентов рекомендуют нас своим друзьям</p>
+        </div>
+
+        <div class="utp__item">
+            <img class="utp__item__icon" src="./images/about/icon5.svg" alt="icon5" class="utp_icon">
+            <p class="utp__item__title">Скорость</p>
+            <p class="utp__item__text">Короткие сроки установки изделий</p>
+        </div>
+
+        <div class="utp__item">
+            <img class="utp__item__iconn" src="./images/about/icon6.svg" alt="icon5" class="utp_icon">
+            <p class="utp__item__title">Служба качества</p>
+            <p class="utp__item__text">Безупречное качество и контроль изделий ПВХ</p>
+        </div>
+
+    </div>
+    <div class="btn">
+        <button class="botton botton--reguest">
+            <img src="./images/about/icon-botton.svg" alt="icon1">
+            Оформить заявку на замер
+        </button>
+    </div>
+</div>
+</section>       
 </body>
 </html>
