@@ -1,3 +1,7 @@
+.header {
+    background-color: white;
+}
+
 .header__wrapper {
     display: flex;
     align-items: center;
@@ -10,7 +14,7 @@
     gap: 0 25px;
 }
 
-.link {
+.list__item--link {
     color: #000000;
     text-decoration: none;
     font-family: "Roboto";
@@ -19,12 +23,8 @@
     line-height: 19px;
 }
 
-.btn {
-    display: flex;
-    gap: 0 14px;
-}
 
-.btn-item {
+.btn__item {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -39,16 +39,16 @@
     color: #FFFFFF;
 }
 
-.btn-item-orange {
-    background-color: #EF7F04
-    ;
+.btn__item--orange {
+    background-color: #EF7F04;
 
 }
 
-.btn-item-blue {
+.btn__item--blue {
     background-color: #3B3A63;
 }
 
 .img {
 margin-right: 1px;
 }
+
