@@ -17,10 +17,12 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/service.css">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/approach.css">
 </head>
 <body>
 <header class="header">
     <div class="container header__wrapper">
+        <img src="./images/header/menu.svg" alt="menu" class="menu">
         <img class="container--img" src="./images/header/logo.svg" alt="Logo">
 
         <nav>
@@ -50,16 +52,66 @@
                 <img src="./images/header/icon1.svg" alt="icon1">
                 Заявка на замер
             </button>
-            <button class="btn__item btn-item-blue">
+            <button class="btn__item btn__item--blue">
                 <img src="./images/header/icon2.svg" alt="icon2">
                 Заказать расчет
             </button>
         </div>
     </div>
 </header>
-<section>
-    <div class="container">
-        <img src="./images/section/background.svg" alt="background">
+<section class="approach">
+    <div class="container container-approach">
+        <div class="backround">
+        <img class="backround1" src="./images/approach/background.svg" alt="background">
+        <img class="backround2" src="./images/approach/background2.svg" alt="background">
+        <div class="container-approach__tint"><img src="./images/approach/Rectangle 6.svg" alt="tint"></div> 
+        <!-- <div class="container-approach__tint--992"><img src="./images/approach/tint992.svg" alt="tint"></div>  -->
+        </div>
+    
+
+        <div class="approach__discript">
+            <p class="discript__title">Окна хаус -</p>
+            <p class="discript__text">Профессиональный подход к остеклению</p>
+        </div>
+        
+        <div class="approach__pros">
+            <div class="pros__item">
+                <img class="item__icon" src="./images/approach/icon1.svg" alt="icon">
+                <p class="item__text">Современные окна
+                    и балконные конструкции 
+                    по доступным ценам</p>
+            </div>
+            <div class="pros__item">
+                <img class="item__icon" src="./images/approach/icon2.svg" alt="icon">
+                <p class="item__text">Квалифицированный 
+                    подход к решению задач
+                    любой сложности</p>
+            </div>
+            <div class="pros__item">
+                <img class="item__icon" src="./images/approach/icon3.svg" alt="icon">
+                <p class="item__text">Гарантия 
+                    высочайшего качества 
+                    нашей продукции</p>
+            </div>
+        </div>
+    </div>
+        <form class="call-form" action="">
+
+            <p class="form__title">Вызвать замершика на дом</p>
+            <input type="text" class="form__name" placeholder="Представьтесь, пожалуйста">
+            <input type="tel" class="form__tel" placeholder="Номер телефона">
+            <input type="email" class="email" placeholder="E-mail">
+            <div class="form__checkbox">
+                <input id="checkout" type="checkbox" checked class="form__check">
+                <p class="checkbox__text">Согласен на обработку персональных данных 
+                    в соответствии с <a href="" class="checkbox__text__link">политикой конфиденциальности</a></p>
+                    
+            </div>
+            <button class="form__button">Отправить заявку</button>
+            <img src="images/approach/scale.svg" alt="img" class="form__img">
+
+        </form>
+
     </div>
 </section>
 <section class="service">
@@ -179,7 +231,7 @@
         </div>
 
     </div>
-    <div class="btn">
+    <div class="btn__about">
         <button class="botton botton--reguest">
             <img src="./images/about/icon-botton.svg" alt="icon1">
             Оформить заявку на замер

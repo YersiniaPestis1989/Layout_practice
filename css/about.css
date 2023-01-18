@@ -113,10 +113,15 @@
     left: 100px;
 
 }
+.btn__about {
+padding-left: 41%;
+
+}
 
 .botton {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     border: none;
     border-radius: 3px;
@@ -138,5 +143,21 @@
     gap: 19px;
     font-size: 16px;
     position: absolute;
-    left: 41%;
+    
+}
+
+@media (max-width: 992px) {
+    .utp {
+        align-items: center;
+        width: 100%;
+        
+    }
+    .utp__item {
+        flex-basis: 50%;
+    }
+
+    .btn__about {
+        padding-top: 17%;
+        padding-left: 33%;
+    }
 }
