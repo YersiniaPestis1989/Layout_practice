@@ -21,10 +21,12 @@
 </head>
 <body>
 <header class="header">
-    <div class="container header__wrapper">
-        <img src="./images/header/menu.svg" alt="menu" class="menu">
-        <img class="container--img" src="./images/header/logo.svg" alt="Logo">
-
+    <div class="header__wrapper container">
+        <div class="menu-logo">
+            <img src="./images/header/menu.svg" alt="menu" class="menu">
+            <img class="container--img" src="./images/header/logo.svg" alt="Logo">
+        </div>
+        
         <nav>
             <ul class="list">
                 <li class="list__item">
@@ -59,16 +61,13 @@
         </div>
     </div>
 </header>
-<section class="approach">
-    <div class="container container-approach">
-        <div class="backround">
-        <img class="backround1" src="./images/approach/background.svg" alt="background">
-        <img class="backround2" src="./images/approach/background2.svg" alt="background">
-        <div class="container-approach__tint"><img src="./images/approach/Rectangle 6.svg" alt="tint"></div> 
-        <!-- <div class="container-approach__tint--992"><img src="./images/approach/tint992.svg" alt="tint"></div>  -->
-        </div>
-    
-
+<section>
+    <div class="container-approach">
+        <div class="approach__background">
+            <img class="background1" src="./images/approach/back1.JPG" alt="">
+            <img class="background2" src="./images/approach/back2.JPG" alt="">
+        </div> 
+        
         <div class="approach__discript">
             <p class="discript__title">Окна хаус -</p>
             <p class="discript__text">Профессиональный подход к остеклению</p>
@@ -93,27 +92,32 @@
                     высочайшего качества 
                     нашей продукции</p>
             </div>
+
+            <form class="call-form" action="">
+
+                <p class="form__title">Вызвать замершика на дом</p>
+                <input type="text" class="form__name" placeholder="Представьтесь, пожалуйста">
+                <input type="tel" class="form__tel" placeholder="Номер телефона">
+                <input type="email" class="email" placeholder="E-mail">
+                <div class="form__checkbox">
+                    <label for="checkbox">
+                    <input class="checkbox" type="checkbox" checked>
+                    <p class="checkbox__text">Согласен на обработку персональных данных 
+                        в соответствии с <a href="" class="checkbox__text__link">политикой конфиденциальности</a></p>
+                    </label>
+                </div>
+                <button class="form__button">Отправить заявку</button>
+                <img src="images/approach/scale.svg" alt="img" class="form__img">
+    
+            </form>
         </div>
     </div>
-        <form class="call-form" action="">
-
-            <p class="form__title">Вызвать замершика на дом</p>
-            <input type="text" class="form__name" placeholder="Представьтесь, пожалуйста">
-            <input type="tel" class="form__tel" placeholder="Номер телефона">
-            <input type="email" class="email" placeholder="E-mail">
-            <div class="form__checkbox">
-                <input id="checkout" type="checkbox" checked class="form__check">
-                <p class="checkbox__text">Согласен на обработку персональных данных 
-                    в соответствии с <a href="" class="checkbox__text__link">политикой конфиденциальности</a></p>
-                    
-            </div>
-            <button class="form__button">Отправить заявку</button>
-            <img src="images/approach/scale.svg" alt="img" class="form__img">
-
-        </form>
 
     </div>
+
+
 </section>
+
 <section class="service">
     <div class="container">
         <h2 class="title">Наши услуги</h2>
@@ -191,6 +195,7 @@
     <div class="description">
         <img class="description__logo" src="./images/about/logo.svg" alt="logo">
         <img class="description__image" src="./images/about/image.svg" alt="image">
+        <img class="description__image--992" src="./images/about/image992.svg" alt="image">
         <p class="description__text">Мы помогаем клиентам подбирать решения, учитывая пожежелания к характеристикам окна и его стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали правильный выбор.</p>
     </div>
     <div class="utp">
