@@ -1,0 +1,265 @@
+.container-approach {
+    margin: 0 auto;
+    width: 1920px;
+    justify-content: center; 
+    position: relative;
+    background-blend-mode: multiply; 
+    background-color: #4B67AF;
+    
+}
+
+.backround {
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+    height: 562px;
+      
+}
+
+.container-approach__tint {
+    position: absolute;
+    opacity: 0.75;
+} 
+
+.approach__discript {
+    position: absolute;
+    left: 444px;
+    top: 129px;
+    height: 15%;
+    width: 511px;
+}
+
+.discript__title {
+    color: #EF7F04;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 160%;
+    padding-bottom: 0;
+    }
+
+.discript__text {
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 33px;
+    padding-top: 10px;
+
+}
+
+.approach__pros {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 530px;
+    height: 176px;
+    gap: 10px;
+    top: 273px;
+    left: 430px;
+    
+
+}
+
+.pros__item {
+    width: 180px;
+    height: 158px;
+    padding-left: 10px;
+    position: relative;
+    
+
+}
+
+.item__icon {
+    /* position: absolute; */
+    width: 92px;
+    height: 79px;
+}
+
+.item__text {
+    position: absolute;
+    left: 18px;
+    width: 176px;
+    height: 58px;
+    padding-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.call-form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 150px;
+    right: 13vw;
+    background-color: #EF7F04;
+    width: 406px;
+    height: 428px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    
+}
+
+.call-form:before {
+    content: url(../images/approach/scale.svg);
+    position: absolute;
+    bottom: -57px;
+    left: -89px;
+}
+
+.form__title {
+    padding-top: 10%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2F2F51;
+    padding-bottom: 27px;
+}
+
+.form__img {
+    position: absolute;
+    top: 351px;
+    width: 607px;
+    height: 117.75px;
+}
+
+.form__name, .form__tel, .email {
+    width: 80%;
+    height: 9%;
+    border-radius: 3px;
+    margin-bottom: 4%;
+    background-color: #E2E2E2;
+    border: none;
+}
+
+.form__checkbox {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    position: relative;
+} 
+/* #checkbox {
+    display: none;
+} */
+/* input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+    display: none;
+    
+    }
+
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    height: 25px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #E2E2E2;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 1em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+}
+
+input[type="checkbox"]:checked + label:after
+ {
+    content: url(../images/approach/check.zip);
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+} */
+
+
+
+/* .checkbox {
+    display:inline;
+}  */
+
+.checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.checkbox__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    padding-bottom: 7%;
+    position: absolute;
+    top: -4px;
+    left: 46px;
+}
+
+.checkbox__text__link {
+    text-decoration: none;
+    color: #4B67AF;
+
+}
+
+input::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #424268;
+    padding-left: 5%;
+}
+
+.form__button {
+    position: absolute;
+    top: 307px;
+    width: 199px;
+    height: 54.5px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 19px 10px 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80%;
+    line-height: 15px;
+    color: white;
+    background-color: #EF7F04;
+}
+
+@media (max-width: 992px){
+    .call-form {
+        display: none;
+    }
+    .approach__discript {
+        left: 7%;
+        right: 60%;
+    }
+    .approach__pros {
+        /* left: 7%; */
+        right: 60%;
+    
+    }
+    
+}

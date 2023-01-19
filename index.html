@@ -13,16 +13,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/service.css">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/approach.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/a-q.css">
 </head>
 <body>
 <header class="header">
-    <div class="container header__wrapper">
-        <img class="container--img" src="./images/header/logo.svg" alt="Logo">
-
+    <div class="header__wrapper container">
+        <div class="menu-logo">
+            <img src="./images/header/menu.svg" alt="menu" class="menu">
+            <img class="container--img" src="./images/header/logo.svg" alt="Logo">
+        </div>
+        
         <nav>
             <ul class="list">
                 <li class="list__item">
@@ -50,7 +57,7 @@
                 <img src="./images/header/icon1.svg" alt="icon1">
                 Заявка на замер
             </button>
-            <button class="btn__item btn-item-blue">
+            <button class="btn__item btn__item--blue">
                 <img src="./images/header/icon2.svg" alt="icon2">
                 Заказать расчет
             </button>
@@ -58,10 +65,62 @@
     </div>
 </header>
 <section>
-    <div class="container">
-        <img src="./images/section/background.svg" alt="background">
+    <div class="container-approach">
+        <div class="approach__background">
+            <img class="background1" src="./images/approach/back1.JPG" alt="">
+            <img class="background2" src="./images/approach/back2.JPG" alt="">
+        </div> 
+        
+        <div class="approach__discript">
+            <p class="discript__title">Окна хаус -</p>
+            <p class="discript__text">Профессиональный подход к остеклению</p>
+        </div>
+        
+        <div class="approach__pros">
+            <div class="pros__item">
+                <img class="item__icon" src="./images/approach/icon1.svg" alt="icon">
+                <p class="item__text">Современные окна
+                    и балконные конструкции 
+                    по доступным ценам</p>
+            </div>
+            <div class="pros__item">
+                <img class="item__icon" src="./images/approach/icon2.svg" alt="icon">
+                <p class="item__text">Квалифицированный 
+                    подход к решению задач
+                    любой сложности</p>
+            </div>
+            <div class="pros__item">
+                <img class="item__icon" src="./images/approach/icon3.svg" alt="icon">
+                <p class="item__text">Гарантия 
+                    высочайшего качества 
+                    нашей продукции</p>
+            </div>
+
+            <form class="call-form" action="">
+
+                <p class="form__title">Вызвать замершика на дом</p>
+                <input type="text" class="form__name" placeholder="Представьтесь, пожалуйста">
+                <input type="tel" class="form__tel" placeholder="Номер телефона">
+                <input type="email" class="email" placeholder="E-mail">
+                <div class="form__checkbox">
+                    <label for="checkbox">
+                    <input class="checkbox" type="checkbox" checked>
+                    <p class="checkbox__text">Согласен на обработку персональных данных 
+                        в соответствии с <a href="" class="checkbox__text__link">политикой конфиденциальности</a></p>
+                    </label>
+                </div>
+                <button class="form__button">Отправить заявку</button>
+                <img src="images/approach/scale.svg" alt="img" class="form__img">
+    
+            </form>
+        </div>
     </div>
+
+    </div>
+
+
 </section>
+
 <section class="service">
     <div class="container">
         <h2 class="title">Наши услуги</h2>
@@ -139,6 +198,7 @@
     <div class="description">
         <img class="description__logo" src="./images/about/logo.svg" alt="logo">
         <img class="description__image" src="./images/about/image.svg" alt="image">
+        <img class="description__image--992" src="./images/about/image992.svg" alt="image">
         <p class="description__text">Мы помогаем клиентам подбирать решения, учитывая пожежелания к характеристикам окна и его стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали правильный выбор.</p>
     </div>
     <div class="utp">
@@ -179,13 +239,52 @@
         </div>
 
     </div>
-    <div class="btn">
+    <div class="btn__about">
         <button class="botton botton--reguest">
             <img src="./images/about/icon-botton.svg" alt="icon1">
             Оформить заявку на замер
         </button>
     </div>
 </div>
-</section>       
+<section class="container">
+    <div class="portfolio">
+        <h2 class="title title--port">Портфолио</h2>
+        <div class="portfolio-items">
+            <img src="./images/portfolio/img1.svg" alt="" class="portfolio-items--img">
+            <img src="./images/portfolio/img2.jpg" alt="" class="portfolio-items--img portfolio-items--img--shodow">
+            <img src="./images/portfolio/img3.svg" alt="" class="portfolio-items--img">
+            <img src="./images/portfolio/img4.svg" alt="" class="portfolio-items--img portfolio-items--img--none">
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="qwestion-answer">
+        <h2 class="title title-qa">Вопрос-ответ</h2>
+        <div class="select-items">
+            <select name="select-item" id="select-item" class="select-items__item">
+                <option value="" class="item__text">Сколько по времени занимает изготовление пластиковых окон?</option>
+            </select>
+            <select name="select-item" id="select-item" class="select-items__item">
+                <option value="" class="item__text">Какие существуют способы оплаты?</option>
+            </select>
+            <select name="select-item" id="select-item" class="select-items__item">
+                <option value="" class="item__text">Где я могу посмотреть образцы?</option>
+            </select>
+            <select name="select-item" id="select-item" class="select-items__item select-items__item--qa">
+                <option value="" class="item__text">Зачем вызывать замерщика? Я могу дать размеры</option>
+            </select>
+            <select name="select-item" id="select-item" class="select-items__item">
+                <option value="" class="item__text">Хотелось бы отделать балкон. Поможете?</option>
+            </select>
+            <select name="select-item" id="select-item" class="select-items__item">
+                <option value="" class="item__text">Мне надо нанимать грузчиков для подъема?</option>
+                <option value="" class="item__text--var">Нет, команда мастеров все сами аккуратно доставят и внесут.</option>
+            </select>
+
+        </div>
+
+    </div>
+</section>
 </body>
 </html>

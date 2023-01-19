@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding: 0 250px 25px 250px; 
+    padding: 0 10% 25px 10%; 
 }
 .list-about__item {
     font-family: 'Roboto';
@@ -19,6 +19,8 @@
     background-color: #EF7F04;
 }
 
+
+
 .description {
     position: relative;
     height: 461px;
@@ -32,6 +34,17 @@
     left: 50px;
     height: 139px;
     width: 198px;
+}
+
+.description__image--992 {
+    display: none;
+    position: absolute;
+    width: 447px;
+    height: 461px;
+    top: 0;
+    right: 0;
+    left: 443px;
+    bottom: 0;
 }
 
 .description__image {
@@ -66,6 +79,7 @@
     width: 1150px;
     height: 300px;
     /* padding: 68px 0 0 0px; */
+    padding: 0 1%;
     justify-content: space-between;
     align-items: center; 
     align-content: space-between;
@@ -111,12 +125,21 @@
     color: black;
     top: 35px;
     left: 100px;
+    
+
+}
+/* Исправить */
+.btn__about {
+padding-left: 39%;
+padding-top: 112px;
+
 
 }
 
 .botton {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     border: none;
     border-radius: 3px;
@@ -133,10 +156,49 @@
 .botton--reguest {
     width: 312px;
     height: 54px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     justify-content: center;
     gap: 19px;
     font-size: 16px;
     position: absolute;
-    left: 41%;
+    
+}
+
+@media (max-width: 992px) {
+    .utp {
+        align-items: center;
+        width: 100%;
+        padding: 0 10%;
+        
+    }
+    .utp__item {
+        flex-basis: 50%;
+    }
+
+    .btn__about {
+        padding-top: 17%;
+        padding-left: 33%;
+    }
+
+    .botton--reguest {
+        margin-top: 134px;
+    }
+    .description {
+        width: 992px;
+    }
+
+    .description__text {
+        top: 240px;
+        left: 122px;
+        width: 277px;
+    }
+    .description__image--992 {
+        display: block;
+
+    }
+    .description__image {
+        display: none;
+    }
+
+    
 }
