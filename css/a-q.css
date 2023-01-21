@@ -111,7 +111,7 @@ height: 82px;
     width: 998px;
 
     background: #FFFFFF;
-    
+/*     margin-left: 18px; */
 }
 
 .select-items__item[open] > .item__text--var {
