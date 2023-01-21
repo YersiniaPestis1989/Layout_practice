@@ -103,12 +103,11 @@
                 <input type="tel" class="form__tel" placeholder="Номер телефона">
                 <input type="email" class="email" placeholder="E-mail">
                 <div class="form__checkbox">
-                    <label for="checkbox">
-                    <input class="checkbox" type="checkbox" checked>
-                    <p class="checkbox__text">Согласен на обработку персональных данных 
-                        в соответствии с <a href="" class="checkbox__text__link">политикой конфиденциальности</a></p>
-                    </label>
+                    <input type="checkbox" id="html">
+                    <label for="html"><span>Согласен на обработку персональных данных 
+                    в соответствии с <a href="" class="checkbox__text__link">политикой конфиденциальности</a></span></label>
                 </div>
+                
                 <button class="form__button">Отправить заявку</button>
                 <img src="images/approach/scale.svg" alt="img" class="form__img">
     
@@ -262,29 +261,27 @@
     <div class="qwestion-answer">
         <h2 class="title title-qa">Вопрос-ответ</h2>
         <div class="select-items">
-            <select name="select-item" id="select-item" class="select-items__item">
-                <option value="" class="item__text">Сколько по времени занимает изготовление пластиковых окон?</option>
-            </select>
-            <select name="select-item" id="select-item" class="select-items__item">
-                <option value="" class="item__text">Какие существуют способы оплаты?</option>
-            </select>
-            <select name="select-item" id="select-item" class="select-items__item">
-                <option value="" class="item__text">Где я могу посмотреть образцы?</option>
-            </select>
-            <select name="select-item" id="select-item" class="select-items__item select-items__item--qa">
-                <option value="" class="item__text">Зачем вызывать замерщика? Я могу дать размеры</option>
-            </select>
-            <select name="select-item" id="select-item" class="select-items__item">
-                <option value="" class="item__text">Хотелось бы отделать балкон. Поможете?</option>
-            </select>
-            <select name="select-item" id="select-item" class="select-items__item">
-                <option value="" class="item__text">Мне надо нанимать грузчиков для подъема?</option>
-                <option value="" class="item__text--var">Нет, команда мастеров все сами аккуратно доставят и внесут.</option>
-            </select>
-
+            <details class="select-items__item">
+                <summary class="select-item__text">Сколько по времени занимает изготовление пластиковых окон?</summary>
+            </details>
+            <details class="select-items__item">
+                <summary class="select-item__text">Какие существуют способы оплаты?</summary>
+            </details>
+            <details class="select-items__item">
+                <summary class="select-item__text">Где я могу посмотреть образцы?</summary>
+            </details>
+            <details class="select-items__item select-items__item--qa">
+                <summary class="select-item__text">Зачем вызывать замерщика? Я могу дать размеры</summary>
+            </details>
+            <details class="select-items__item">
+                <summary class="select-item__text">Хотелось бы отделать балкон. Поможете?</summary>
+            </details>
+            <details class="select-items__item">
+                <summary class="select-item__text">Мне надо нанимать грузчиков для подъема?</summary>
+                <p class="item__text--var">Нет, команда мастеров все сами аккуратно доставят и внесут.</p>
+            </details>
         </div>
-
     </div>
-</section>
+
 </body>
 </html>

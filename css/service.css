@@ -13,6 +13,9 @@
     border-radius: 3px;
     box-shadow: 5px 10px 5px 0 rgb(209, 209, 209);
 }
+.block:hover {
+    opacity: 0.5;
+}
 
 .block__background {
     position: absolute;
