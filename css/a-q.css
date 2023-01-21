@@ -25,7 +25,7 @@
     border-radius: 3px;
     padding: 0 19px;
     width: 998px;
-    height: 82px;
+height: 82px;
     
     border: none;
     background: #EEEEF3;
@@ -40,11 +40,12 @@
     list-style: none;
 }
 
-.select-items__item:hover:: {
+.select-items__item:hover::after {
     display: block;
+    background-color: white;
 }
 
-.item__text {
+.select-item__text {
     list-style: none;
     position: relative;
     font-family: 'Roboto';
@@ -54,8 +55,8 @@
     line-height: 21px;
     color: #2F2F51;
     width: auto;
-    padding: 30px 19px;
-    width: 800px;
+    padding: 30px 0;
+    width: 998px;
     height: 82px;
     background-color: #EEEEF3;
     /* clip: rect(0 0 0 0);
@@ -63,35 +64,39 @@
     display: inline-block; */
 } */
 
-.item__text::-webkit-details-marker {
+.select-item__text::-webkit-details-marker {
     display: none;
 }
 
-.item__text:hover::-webkit-details-marker {
+.select-item__text:hover::-webkit-details-marker {
     display: none;
 }
 
-.item__text:hover {
+.select-item__text:hover {
     
     color: #EF7F1A;
     background: #FFFFFF;
 } 
 
-.item__text::after {
+.select-item__text::after {
     display: block;
     content: url(../images/a-q/select.svg);
     position: absolute;
-    right: 5%;
+    right: 3%;
     top: 45%;
 }
 .select-items__item[open] {
     list-style: none;
+    background-color: white;
 }
 
-.select-items__item[open] > .item__text:after {
-
+.select-items__item[open] > .select-item__text:after {
+    background-color: white;
     display: block;
     transform: rotate(180deg);
+}
+.select-items__item[open] > .select-item__text {
+    background-color: white;
 }
 
 .select-items__item > .item__text--var {
@@ -103,17 +108,21 @@
     font-size: 16px;
     line-height: 19px;
     color: #000000;
-    width: 100%;
+    width: 998px;
+
     background: #FFFFFF;
-    margin-left: 18px;
+    
 }
 
 .select-items__item[open] > .item__text--var {
     color: #000000;
-    width: 800px;
+    
+    width: 106%;
+    margin-left: -19px;
+    background-color: white;
 }
 
-.select-items__item:hover > .item__text:after {
+.select-items__item:hover > .select-item__text:after {
     filter: invert(72%) sepia(57%) saturate(5258%) hue-rotate(351deg) brightness(98%) contrast(91%);
 }
 
@@ -132,7 +141,7 @@
         height: 82px;
     }
 
-    .item__text {
+    .select-item__text {
     width: 800px;
     height: 82px;
     }
