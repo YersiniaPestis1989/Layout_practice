@@ -4,11 +4,19 @@
 
 body {
     background-color: #F2F2F2;
+
 }
 
+/* .cent {
+    display: flex;
+    justify-content: center;
+} */
+
 .container-full {
-    width: 1920px;
+    /* width: 1920px; */
     margin: 0 auto;
+
+    
 }
 
 .container{
