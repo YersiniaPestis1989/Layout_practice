@@ -1,56 +1,53 @@
 .approach {
-    /* display: flex;
-   
-    width: 100vw;
-    height: 562px; 
-    margin: 0 auto;*/
     position: relative;  
     background-image: url(../images/approach/back1.JPG);
     background-repeat: no-repeat;
-    height: 562px; 
-     /* width: 100vw; */
-    /* background-size: cover; */
-    /* max-width: 1920px; */
+    height: 562px;
+    max-width: 1920px;
 }
 
-.approach__discript {
-    position: absolute;
-    left: 18%;
-    top: 25%;
-    height: 15%;
+.app_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 71px;
+    gap: 75px;
+}
+
+.content__text {
     width: 511px;
+    display: flex;
+    flex-direction: column;
+    gap:17px;
+
 }
 
-.discript__title {
-    color: #EF7F04;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 160%;
-    padding-bottom: 0;
-    }
-
-.discript__text {
+.text__title {
     color: #FFFFFF;
     font-family: 'Roboto';
     font-weight: 100;
     font-size: 36px;
     padding-top: 10px;
+    padding-left: 28px;
 
 }
 
+.title__h1 {
+    display: block;
+    color: #EF7F04;
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 160%;
+    padding-bottom: 0;
+}
+
 .approach__pros {
-    position: absolute;
     display: flex;
     justify-content: space-evenly;
     width: 530px;
     height: 176px;
     gap: 10px;
-    top: 50%;
-    left: 18%;
-    
-
 }
-
 .pros__item {
     width: 180px;
     height: 158px;
@@ -81,13 +78,10 @@
 }
 
 .call-form {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 10%;
-    left: 63%;
-    /* right: -25vw; */
     background-color: #EF7F04;
     width: 406px;
     height: 428px;
@@ -135,8 +129,8 @@
     display: flex; 
     justify-content: space-between; 
     width: 80%;
-   align-items: center;
-     position: relative; 
+    align-items: center;
+    position: relative; 
 } 
 
 .checkbox {
@@ -192,66 +186,6 @@ input::placeholder {
     opacity: 0.5;
 }
 
-@media (max-width: 1200px) {
-    .container-approach {
-        background: url(../images/approach/background1200.JPG) no-repeat;
-        background-size: auto 100%;
-        min-width: 1200px;
-    } 
-    .background1 {
-        display: none;
-        }
-    .background3 {
-        display: block;
-        height: 562px;
-
-    }    
-    .call-form {
-        left: 60%;
-    }
-    .approach__pros {
-        left: 13%;
-
-    }
-    .approach__discript {
-        left: 15%;
-
-    }
-}
-
-@media (max-width: 992px) {
-    .container-approach{
-        width: 992px;
-        background: url(../images/approach/back2.JPG) no-repeat;
-        background-size: auto 100%;
-        width: 1200px;
-
-    }
-    .background1 {
-    display: none;
-    }
-    .background2 {
-    display: block;
-    width: 992px;
-    height: 562px;
-    }
-    .background3 {
-        display: none;
-    }
-    .call-form {
-        display: none;
-    }
-
-        .approach__discript {
-            left: 7%;
-            right: 60%;
-        }
-        .approach__pros {
-            left: 4%; 
-            right: 60%;
-        }
-} 
-
 .form__checkbox {
     display: block;
     margin-bottom: 15px;
@@ -264,13 +198,9 @@ input::placeholder {
     margin-bottom: 0;
     display: none;
     cursor: pointer;
-    /* width: 287.5px;
-    height: 48px;
-    width: 287.5px;
-    height: 48px; */
-  }
-  
-  .form__checkbox label {
+}
+
+.form__checkbox label {
 display: flex; 
 
 justify-content: space-between;
@@ -287,20 +217,15 @@ padding-left: 5px;
 
 color: #000000;
   }
-/* .checkbox__text__link {
-    display: inline;
-} */
 
   /* Фон чек бокса */
-  .form__checkbox label:before {
+.form__checkbox label:before {
     content:'';
     -webkit-appearance: none;
     background-color: transparent;
     border: none;
     background: #E2E2E2;
     border-radius: 3px;
-    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05); */
-    /* padding: 10px; */
     display: block;
     position: relative;
     vertical-align: middle;
@@ -309,14 +234,14 @@ color: #000000;
     width: 50px;
     height: 25px;
     display: block;
-  }
-  
-  .form__checkbox input:checked {
+}
+
+.form__checkbox input:checked {
     content: "";
     
-  }
+}
 
-  .form__checkbox input:checked + label:after {
+.form__checkbox input:checked + label:after {
     content: url(../images/approach/check.svg);
     width: 24px;
     height: 26px;
@@ -327,4 +252,43 @@ color: #000000;
     width: 6px;
     height: 14px;
     
-  }
+}
+
+@media screen and (max-width: 1200px) {
+    .approach {
+        background: url(../images/approach/background1200.JPG) no-repeat;
+        background-size: auto 100%;
+        min-width: 1200px;
+    } 
+    
+    .approach__pros {
+        left: 13%;
+
+    }
+    .approach__discript {
+        left: 15%;
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .approach{
+        /* width: 992px; */
+        background: url(../images/approach/back2.JPG) no-repeat;
+        background-size: auto 100%;
+        /* width: 992px; */
+    }
+    
+    .call-form {
+        display: none;
+    }
+
+        .approach__discript {
+            left: 7%;
+            right: 60%;
+        }
+        .approach__pros {
+            left: 4%; 
+            right: 60%;
+        }
+} 

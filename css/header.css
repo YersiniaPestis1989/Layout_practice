@@ -1,5 +1,6 @@
 .header {
     background-color: white;
+    margin:17px 0;
     /* padding-bottom: 20px;
     margin: 0 auto;
     width: auto;
@@ -11,9 +12,13 @@
 .header__wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 17px;
     }
+
+            .container--img {
+                margin: 0 17px;
+            }
 
 .menu {
     display: none;
