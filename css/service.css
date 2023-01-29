@@ -13,11 +13,37 @@
     border-radius: 3px;
     box-shadow: 5px 10px 5px 0 rgb(209, 209, 209);
 }
+
+.block__back1 {
+    background: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), 
+    url(../images/service/block_background1.svg) no-repeat;
+    background-size: auto 100%;
+    
+}
+.block__back2 {
+    background:linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%),
+     url(../images/service/block_background2.jpg) no-repeat;
+    background-size: auto 100%;
+    
+}
+.block__back3 {
+    background: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%),
+    url(../images/service/block_background3.svg) no-repeat;
+    background-size: auto 100%;
+    
+}
+.block__back4 {
+    background: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), 
+    url(../images/service/block_background4.svg) no-repeat;
+    background-size: auto 100%;
+    
+}
+
 .block:hover {
     opacity: 0.5;
 }
 
-.block__background {
+/* .block__background {
     position: absolute;
     width: 595px;
     height: 268px;
@@ -29,8 +55,8 @@
     background: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%);
     width: 595px;
     height: 268px;
-    border-radius: 3px;
-}
+    border-radius: 3px; 
+}*/
 
 .block__image {
     width: 595px;
@@ -77,7 +103,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width:80%;
+        /* width:80%; */
     }
         /* .block {
             width: 74%;
