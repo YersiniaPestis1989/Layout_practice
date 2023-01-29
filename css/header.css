@@ -4,6 +4,8 @@
     margin: 0 auto;
     width: auto;
     ширина изменена */
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .header__wrapper {
