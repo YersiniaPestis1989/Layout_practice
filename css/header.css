@@ -1,8 +1,9 @@
 .header {
     background-color: white;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px;
     margin: 0 auto;
-    width: 1920px;
+    width: auto;
+    ширина изменена */
 }
 
 .header__wrapper {
@@ -70,6 +71,12 @@
 
 .img {
 margin-right: 1px;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        width: 1200px;
+    }
 }
 
 @media (max-width: 992px) {
